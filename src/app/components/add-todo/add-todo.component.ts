@@ -6,6 +6,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./add-todo.component.css']
 })
 export class AddTodoComponent implements OnInit {
+
 	@Output() addTodo: EventEmitter<any> = new EventEmitter();
 
 	title: string;
@@ -20,7 +21,7 @@ export class AddTodoComponent implements OnInit {
 			title: this.title,
 			completed: false
 		}
-
+    console.log(todo);
 		this.addTodo.emit(todo);
 
 	}

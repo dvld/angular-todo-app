@@ -18,7 +18,7 @@ import { AboutComponent } from './components/pages/about/about.component';
     TodoItemComponent,
     HeaderComponent,
     AddTodoComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
